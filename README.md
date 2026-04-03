@@ -1,69 +1,113 @@
-# Local MCP — Claude Code Plugin
+# Pilot MCP — Claude Code Plugin
 
-> Connect Claude Code to Mail, Calendar, Contacts, Teams, OneDrive, and 80+ macOS tools. All data stays on your Mac.
+> Give Claude Code native access to Mail, Calendar, Contacts, Teams, OneDrive, Notes, OmniFocus and 80+ macOS tools. All data stays on your Mac.
 
 [![npm](https://img.shields.io/npm/v/local-mcp)](https://www.npmjs.com/package/local-mcp)
 [![platform](https://img.shields.io/badge/platform-macOS-blue)](https://local-mcp.com)
+[![smithery badge](https://smithery.ai/badge/@lanchuske/local-mcp)](https://smithery.ai/server/@lanchuske/local-mcp)
+
+---
 
 ## Install
 
-From Claude Code:
+**Option 1 — Claude Code plugin:**
 
 ```
-/plugin install local-mcp@claude-plugins-official
+/mcp add local-mcp
 ```
 
-Or add manually to your MCP config:
+**Option 2 — Manual config** (`.claude/mcp.json` or `~/.claude.json`):
 
 ```json
 {
   "mcpServers": {
     "local-mcp": {
       "command": "npx",
-      "args": ["-y", "local-mcp@latest"]
+      "args": ["-y", "local-mcp@latest", "stdio"]
     }
   }
 }
 ```
 
-## What you get
+**Option 3 — Full setup** (also configures Cursor, Windsurf, VS Code):
 
-82 MCP tools across 14 macOS services:
+```bash
+npx -y local-mcp@latest setup
+```
 
-| Service | What Claude can do |
-|---------|-------------------|
-| **Mail** | Read, search, send, reply, move, save attachments |
-| **Calendar** | List, create, delete events across all accounts |
+---
+
+## What Claude Code can access
+
+| Service | Tools |
+|---------|-------|
+| **Mail** | Read, search, send, reply, move emails · Save attachments · Multiple accounts |
+| **Calendar** | List, create, delete events · Multi-account (iCloud, Google, Exchange) |
 | **Contacts** | Search and list from Contacts.app |
-| **Teams** | Read chats, channels, messages (no tokens needed) |
-| **OneDrive** | List, read, write, search, move, delete files |
-| **Documents** | Create and read Word, Excel, PowerPoint, PDF |
-| **Outlook** | Read, search, send emails, manage calendar events |
-| **Reminders** | List, create, complete (includes Microsoft To Do sync) |
-| **OmniFocus** | Tasks, projects, tags — create and complete |
+| **Microsoft Teams** | Read chats and channels · No tokens or OAuth needed |
+| **OneDrive** | List, read, write, move, delete, search files |
+| **Microsoft Outlook** | Read, search, send emails · List and create calendar events |
+| **Word / Excel / PowerPoint** | Read and create Office documents |
+| **PDF** | Extract and summarize text |
+| **Reminders** | List, create, complete · Includes Microsoft To Do via macOS sync |
+| **OmniFocus** | Tasks, projects, tags · Create and complete |
 | **Notes** | List, read, search, create in Apple Notes |
 | **Messages** | List chats, read and search iMessages |
-| **Stocks** | Real-time quotes, charts, symbol search |
-| **Finder** | Search and list files |
+| **Finder** | Search and list files on your Mac |
 | **Safari** | List bookmarks |
+| **Stocks** | Real-time quotes, charts, symbol search |
 
-## Privacy
+82 tools total.
 
-All data stays on your Mac. No cloud servers, no API tokens, no data leaves your machine. GDPR and CCPA compliant by design.
+---
+
+## Example prompts with Claude Code
+
+```
+Search my emails for the Figma invoice and save it to my Downloads folder
+
+Create a calendar event: "Deploy review" tomorrow at 11am in my Work calendar
+
+What did the #backend channel in Teams say about the outage?
+
+Read the contract PDF in my OneDrive Legal folder and list the key dates
+
+Add a reminder to follow up with Marco on Friday at 9am
+
+Create a new Apple Note with a summary of what we discussed today
+```
+
+---
 
 ## Safety
 
-- Email send/reply shows a preview before sending
-- Calendar events require explicit calendar name
-- All destructive operations require confirmation
+- **Read operations** run immediately with no confirmation
+- **Destructive operations** (send email, delete event, write file) show a preview and ask for confirmation before executing
+- No tool can take any action without a preceding read to verify the correct target
+
+---
+
+## Privacy
+
+All data stays on your Mac. No cloud servers process your emails, files, or messages. The only network requests are:
+- License validation to `local-mcp.com`
+- Cloud Relay tunnel (optional, encrypted, only if you enable it)
+
+GDPR and CCPA compliant by architecture.
+
+---
 
 ## Requirements
 
-- macOS 12 Monterey or later (Apple Silicon and Intel)
+- macOS 13 Monterey or later
+- Apple Silicon or Intel
 - Node.js 18+
+
+---
 
 ## Links
 
-- [Website](https://local-mcp.com)
-- [npm package](https://www.npmjs.com/package/local-mcp)
+- [Website](https://local-mcp.com?utm_source=claude-plugin)
+- [npm](https://www.npmjs.com/package/local-mcp)
+- [Smithery listing](https://smithery.ai/server/@lanchuske/local-mcp)
 - Support: support@local-mcp.com
