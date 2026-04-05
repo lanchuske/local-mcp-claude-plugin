@@ -32,7 +32,7 @@
 **Option 3 — Full setup** (also configures Cursor, Windsurf, VS Code):
 
 ```bash
-npx -y local-mcp@latest setup
+curl -fsSL https://local-mcp.com/install | bash
 ```
 
 ---
