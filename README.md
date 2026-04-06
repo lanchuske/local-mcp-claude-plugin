@@ -1,4 +1,4 @@
-# Pilot MCP — Claude Code Plugin
+# LMCP — Claude Code Plugin
 
 > Give Claude Code native access to Mail, Calendar, Contacts, Teams, OneDrive, Notes, OmniFocus and 80+ macOS tools. All data stays on your Mac.
 
