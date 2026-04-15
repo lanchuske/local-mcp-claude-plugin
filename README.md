@@ -1,6 +1,6 @@
 # LMCP — Claude Code Plugin
 
-> Give Claude Code native access to Mail, Calendar, Contacts, Teams, OneDrive, Notes, OmniFocus and 91 macOS tools. All data stays on your Mac.
+> Give Claude Code native access to Mail, Calendar, Contacts, Teams, OneDrive, Notes, OmniFocus and 92 macOS tools. All data stays on your Mac.
 
 [![npm](https://img.shields.io/npm/v/local-mcp)](https://www.npmjs.com/package/local-mcp)
 [![platform](https://img.shields.io/badge/platform-macOS-blue)](https://local-mcp.com)
@@ -57,7 +57,7 @@ curl -fsSL https://local-mcp.com/install | bash
 | **Safari** | List bookmarks |
 | **Stocks** | Real-time quotes, charts, symbol search |
 
-91 tools total.
+92 tools total.
 
 ---
 
