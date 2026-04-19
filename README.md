@@ -1,6 +1,6 @@
 # LMCP — Claude Code Plugin
 
-> Give Claude Code native access to Mail, Calendar, Contacts, Teams, OneDrive, Notes, OmniFocus and 92 macOS tools. All data stays on your Mac.
+> Give Claude Code native access to Mail, Calendar, Contacts, Teams, Slack, WhatsApp, OneDrive, Notes, OmniFocus and 111 macOS tools. All data stays on your Mac.
 
 [![npm](https://img.shields.io/npm/v/local-mcp)](https://www.npmjs.com/package/local-mcp)
 [![platform](https://img.shields.io/badge/platform-macOS-blue)](https://local-mcp.com)
@@ -45,6 +45,8 @@ curl -fsSL https://local-mcp.com/install | bash
 | **Calendar** | List, create, delete events · Multi-account (iCloud, Google, Exchange) |
 | **Contacts** | Search and list from Contacts.app |
 | **Microsoft Teams** | Read chats and channels · No tokens or OAuth needed |
+| **Slack** | List workspaces/channels · Read and search messages · No tokens needed (IndexedDB cache) |
+| **WhatsApp** | List chats · Read/search messages · Send text + files *(via the unofficial Wacli client — requires QR-code sign-in; accounts may be restricted for ToS violations)* |
 | **OneDrive** | List, read, write, move, delete, search files |
 | **Microsoft Outlook** | Read, search, send emails · List and create calendar events |
 | **Word / Excel / PowerPoint** | Read and create Office documents |
@@ -56,8 +58,9 @@ curl -fsSL https://local-mcp.com/install | bash
 | **Finder** | Search and list files on your Mac |
 | **Safari** | List bookmarks |
 | **Stocks** | Real-time quotes, charts, symbol search |
+| **NordVPN** | Connection status · Server recommendations · Diagnostics |
 
-92 tools total.
+111 tools total.
 
 ---
 
