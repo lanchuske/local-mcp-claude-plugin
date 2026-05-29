@@ -114,3 +114,9 @@ GDPR and CCPA compliant by architecture.
 - [npm](https://www.npmjs.com/package/local-mcp)
 - [Smithery listing](https://smithery.ai/server/@lanchuske/local-mcp)
 - Support: support@local-mcp.com
+
+## 📬 Stay Updated
+
+Get notified about new tools, bug fixes and major releases — no spam.
+
+**[Subscribe to release notes →](https://local-mcp.com/#newsletter)**
