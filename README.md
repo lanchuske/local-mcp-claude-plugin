@@ -1,6 +1,6 @@
 # LMCP — Claude Code Plugin
 
-> Give Claude Code native access to Mail, Calendar, Contacts, Teams, Slack, WhatsApp, OneDrive, Notes, OmniFocus and 189 tools (107 macOS + 82 Windows). All data stays on your machine.
+> Give Claude Code native access to Mail, Calendar, Contacts, Teams, Slack, WhatsApp, OneDrive, Google Drive, Notion, Notes, OmniFocus and 235 tools. All data stays on your machine.
 
 [![npm](https://img.shields.io/npm/v/local-mcp)](https://www.npmjs.com/package/local-mcp)
 [![platform](https://img.shields.io/badge/platform-macOS-blue)](https://local-mcp.com)
@@ -59,8 +59,10 @@ curl -fsSL https://local-mcp.com/install | bash
 | **Safari** | List bookmarks |
 | **Stocks** | Real-time quotes, charts, symbol search |
 | **NordVPN** | Connection status · Server recommendations · Diagnostics |
+| **Google Drive** | List, read, write, search files |
+| **Notion** | Search, read, list pages and databases |
 
-189 tools total.
+235 tools total.
 
 ---
 
@@ -102,7 +104,7 @@ GDPR and CCPA compliant by architecture.
 
 ## Requirements
 
-- macOS 13 Monterey or later
+- macOS 13 Ventura or later
 - Apple Silicon or Intel
 - Node.js 18+
 
